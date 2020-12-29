@@ -6,15 +6,15 @@
     {
         static void Main()
         {
-            Console.ReadLine();
-            int[] arr = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
+            int arrSize = int.Parse(Console.ReadLine());
+            int[] arr = Console.ReadLine().Split().Select(int.Parse).ToArray();
 
-            int sumOfArray = CalculateSimpleArraySum(arr);
+            int sumOfArray = SimpleArraySum(arr);
 
             Console.WriteLine(sumOfArray);
         }
 
-        static int CalculateSimpleArraySum(int[] arr)
+        static int SimpleArraySum(int[] arr)
         {
             int sumOfArray = 0;
 
